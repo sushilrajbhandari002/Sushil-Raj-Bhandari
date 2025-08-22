@@ -112,36 +112,8 @@
   <i class="bi bi-whatsapp"></i>
 </a>
 
-<script>
-  // List of redirect links before WhatsApp
-  const redirectLinks = [
-    "https://installyourfiles.com/yourai",  // first redirect
-    "https://installyourfiles.com/yourai"   // second redirect
-  ];
 
-  const whatsappLink = "https://wa.me/9827872675";
-
-  // Handle clicks
-  document.getElementById("https://installyourfiles.com/yourai").addEventListener("click", function (e) {
-    e.preventDefault();
-
-    // Get current count (default 0 if not set)
-    let count = parseInt(localStorage.getItem("redirectCount")) || 0;
-    count++;
-
-    // Save back
-    localStorage.setItem("redirectCount", count);
-
-    // If count <= redirectLinks length → redirect to those
-    if (count <= redirectLinks.length) {
-      window.open(redirectLinks[count - 1], "_blank");
-    } else {
-      // Otherwise go to WhatsApp
-      window.open(whatsappLink, "_blank");
-    }
-  });
-</script>
-<!--       <a href="https://wa.me/9827872675" class="whatsapp" target="blank"><i class="bi bi-whatsapp"></i></a> -->
+      <a href="https://wa.me/9827872675" class="whatsapp" target="blank"><i class="bi bi-whatsapp"></i></a>
       <a href="https://www.youtube.com/channel/UC2gsgd60hXtVPRGX4bjB6Fg" class="youtube" target="blank"><i class="bi bi-youtube"></i></a>
 
       <a href="https://www.facebook.com/people/Sushil-Rajbhandari/pfbid02CnwHdBNF6Nq3Yjcik6LDUueeWWyX3FLCX7BSANxktCSebi4uDwa8jaMCYDtg2S3fl/"
